@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var moment = require("moment")
+var moment = require('moment');
 app.use('/',express.static(__dirname));
 
 app.get('/:date',function(req,res){
@@ -24,6 +24,6 @@ app.get('/:date',function(req,res){
     
 });
 
-app.listen(process.env.port || 3000,function(){
+app.listen(process.env.PORT,function(){
     console.log('listening on 8080');
 });
